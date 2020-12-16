@@ -7,7 +7,20 @@
     --bg-secondary: #141418;
     --transition-speed: 600ms;
   }
-  
+  @font-face {
+    font-family: 'cwTeXYen';
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot);
+    src: url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot?#iefix) format('embedded-opentype'),
+    url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff2) format('woff2'),
+    url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format('woff'),
+    url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format('truetype');
+  }
+  body,main {
+    font-family:'cwTeXYen','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
   body {
     color: black;
     background-color: white;
@@ -84,16 +97,11 @@
     margin: 0 1.5rem;
   }
   
-  .fa-primary {
-    color: #ff7eee;
+  .bi {
+    color: #f87996;
   }
   
-  .fa-secondary {
-    color: #df49a6;
-  }
-  
-  .fa-primary,
-  .fa-secondary {
+  .bi {
     transition: var(--transition-speed);
   }
   
@@ -102,10 +110,7 @@
     text-transform: uppercase;
     margin-bottom: 1rem;
     text-align: center;
-    color: var(--text-secondary);
     background: var(--bg-secondary);
-    font-size: 1.5rem;
-    letter-spacing: 0.3ch;
     width: 100%;
   }
   
@@ -116,13 +121,22 @@
   
   .logo-text
   {
+    text-transform: uppercase;
     display: inline;
     position: absolute;
+    z-index: 2;
     left: -999px;
-    transition: var(--transition-speed);
   }
   
-  .navbar:hover .logo svg {
+  .navbar:hover .logo-text {
+    color: #ffffff;
+    font-size: 1.2rem;
+    letter-spacing: 0.1ch;
+    filter: grayscale(0%) opacity(1);
+    transition: var(--transition-speed);
+    
+    }
+    .navbar:hover .logo svg {
     transform: rotate(-180deg);
   }
   
