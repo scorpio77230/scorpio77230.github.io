@@ -87,6 +87,7 @@
   }
   
   .link-text {
+    white-space:nowrap;
     display: none;
     margin-left: 1rem;
   }
