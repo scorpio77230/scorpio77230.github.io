@@ -6,6 +6,7 @@
     --bg-primary: #23232e;
     --bg-secondary: #141418;
     --transition-speed: 600ms;
+    
   }
   @font-face {
     font-family: 'cwTeXYen';
@@ -18,14 +19,18 @@
     url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format('truetype');
   }
   body,main {
+    
     font-family:'cwTeXYen','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
   }
   body {
+    background: linear-gradient(120deg, #5761B2 0%, #1FC5A8 100%);
+    /* height: 96vh; */
     color: black;
     background-color: white;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
   
   body::-webkit-scrollbar {
@@ -44,7 +49,31 @@
     margin-left: 5rem;
     padding: 1rem;
   }
-  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 96vh;
+  }
+  .box {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 3em;
+    border-radius: 3em;
+    backdrop-filter: blur(40px);
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+}
+  .row {
+    text-align: left;
+    display: flex;
+    justify-content: left;
+  }
+.photo{
+  width: 150px;
+}
   .navbar {
     position: fixed;
     background-color: var(--bg-primary);
@@ -191,41 +220,4 @@
     {
       left: 0px;
     }
-  }
-  
-  .dark {
-    --text-primary: #b6b6b6;
-    --text-secondary: #ececec;
-    --bg-primary: #23232e;
-    --bg-secondary: #141418;
-  }
-  
-  .light {
-    --text-primary: #1f1f1f;
-    --text-secondary: #000000;
-    --bg-primary: #ffffff;
-    --bg-secondary: #e4e4e4;
-  }
-  
-  .solar {
-    --text-primary: #576e75;
-    --text-secondary: #35535c;
-    --bg-primary: #fdf6e3;
-    --bg-secondary: #f5e5b8;
-  }
-  
-  .theme-icon {
-    display: none;
-  }
-  
-  .dark #darkIcon {
-    display: block;
-  }
-  
-  .light #lightIcon {
-    display: block;
-  }
-  
-  .solar #solarIcon {
-    display: block;
   }
