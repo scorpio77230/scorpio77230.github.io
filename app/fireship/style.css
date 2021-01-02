@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
 :root {
   font-size: 16px;
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
-  --bg-primary: #23232e;
-  --bg-secondary: #141418;
+  --text-primary: #000000;
+  --text-secondary: #383131;
+  --bg-primary: rgba(255, 255, 255, 0.5);
+  --bg-secondary:  rgba(255, 255, 255, 0.9);
   --transition-speed: 600ms;
   scroll-behavior: smooth;
 }
-body,main {
-  font-family: 'Fira Sans', sans-serif;
+body,main,form {
+  font-family: 'Fira Sans', sans-serif !important;
   }
   body {
     background: url(/app/image/Colorful_Background_Wallpaper.png) center center;
@@ -54,16 +54,17 @@ body,main {
     border: solid 2px transparent;
     background-clip: padding-box;
     box-shadow: 0 20px 50px -10px rgba(46, 54, 68, 0.03);
-    max-width: 800px;
+    /* max-width: 800px; */
   }
   .box h1,h2,h3,h4,h5,h6,p {
-    color: var(--bg-primary);
+    color: var(--text-primary);
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
   }
   .row {
     text-align: left;
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    align-items: center;
   }
   .navbar {
     position: fixed;
@@ -120,9 +121,6 @@ body,main {
   
   .bi {
     color: #f87996;
-  }
-  
-  .bi {
     transition: var(--transition-speed);
   }
   
@@ -150,7 +148,7 @@ body,main {
   }
   
   .navbar:hover .logo-text {
-    color: #ffffff;
+    color: #8d3b3b;
     font-size: 1.4rem;
     letter-spacing: 0.1ch;
     filter: grayscale(0%) opacity(1);
@@ -176,6 +174,38 @@ body,main {
     font-size: 3.5em;
     clip-path: inset(0 0 0 0);
     }
+    form{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    input, textarea{
+      font-family: 'Fira Sans', sans-serif;
+      text-decoration: none;
+      position: relative;
+      width: 100%;
+      display: block;
+      margin: 9px 0px 9px 0px;
+      font-size: 17px;
+      color: var(--text-primary);
+      padding: 8px;
+      border-radius: 6px;
+      border: none;
+      background: rgba(3,3,3,.1);
+      -webkit-transition: all 2s ease-in-out;
+      -moz-transition: all 2s ease-in-out;
+      -o-transition: all 2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+    input[type="submit"]{
+      font-family: 'Fira Sans', sans-serif;
+      cursor: pointer;
+      /* width: 50%; */
+    }
+    textarea {
+      resize: none;
+    }
     
     /* Small screens */
     @media only screen and (max-width: 600px) {
@@ -200,8 +230,11 @@ body,main {
       main {
         margin: 0;
       }
+      .box {
+        max-width: 70vw;
+      }
     }
-    
+
   /* Large screens */
   @media only screen and (min-width: 600px) {
     .navbar {
@@ -226,5 +259,9 @@ body,main {
     .navbar:hover .logo-text
     {
       left: 0px;
+    }
+    .box {
+      min-width: 70vw;
+      max-width: 70vw;
     }
   }
