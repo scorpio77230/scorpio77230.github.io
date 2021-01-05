@@ -8,7 +8,7 @@
   --transition-speed: 600ms;
   scroll-behavior: smooth;
 }
-body,main,form {
+body,main,form,footer {
   font-family: 'Fira Sans', sans-serif !important;
   }
   body {
@@ -38,6 +38,11 @@ body,main,form {
     margin-left: 5rem;
     padding: 1rem;
   }
+  footer {
+    margin: 0 0 0 5rem;
+    height: 5rem;
+    padding: 8px;
+  }
   .container {
     display: flex;
     justify-content: center;
@@ -65,6 +70,10 @@ body,main,form {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .context {
+    font-size: 25px;
+    margin-top: 10px;
   }
   .navbar {
     position: fixed;
@@ -167,7 +176,7 @@ body,main,form {
     }
   
     p {
-        margin: 0;
+        margin: 1em;
     }
   
     h1 {
@@ -188,11 +197,11 @@ body,main,form {
       display: block;
       margin: 9px 0px 9px 0px;
       font-size: 17px;
-      color: var(--text-primary);
+      color: black;
       padding: 8px;
       border-radius: 6px;
       border: none;
-      background: rgba(3,3,3,.1);
+      background: rgba(200, 200, 200, 0.3);
       -webkit-transition: all 2s ease-in-out;
       -moz-transition: all 2s ease-in-out;
       -o-transition: all 2s ease-in-out;
@@ -201,7 +210,6 @@ body,main,form {
     input[type="submit"]{
       font-family: 'Fira Sans', sans-serif;
       cursor: pointer;
-      /* width: 50%; */
     }
     textarea {
       resize: none;
@@ -229,9 +237,16 @@ body,main,form {
       
       main {
         margin: 0;
+        min-height: calc(100% - 5rem);
       }
       .box {
         max-width: 70vw;
+      }
+      h1 {
+        font-size: 2.5em;
+      }
+      footer h4 {
+        display: none
       }
     }
 
@@ -264,4 +279,5 @@ body,main,form {
       min-width: 70vw;
       max-width: 70vw;
     }
+    
   }
