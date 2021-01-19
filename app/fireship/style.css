@@ -12,7 +12,7 @@ body,main,form,footer {
   font-family: 'Fira Sans', sans-serif !important;
   }
   body {
-    background: url(/image/Colorful_Background.jpg) center center;
+    background: url(../image/Colorful_Background.jpg) center center;
     background-size: cover;
     background-attachment: fixed;
     color: black;
