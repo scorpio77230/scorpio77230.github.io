@@ -12,7 +12,7 @@ body,main,form,footer {
   font-family: 'Fira Sans', sans-serif !important;
   }
   body {
-    background: url(/image/Colorful_Background_Wallpaper.jpg) center center;
+    background: url(/image/Colorful_Background.jpg) center center;
     background-size: cover;
     background-attachment: fixed;
     color: black;
@@ -59,7 +59,7 @@ body,main,form,footer {
     border: solid 2px transparent;
     background-clip: padding-box;
     box-shadow: 0 20px 50px -10px rgba(46, 54, 68, 0.03);
-    /* max-width: 800px; */
+    min-height: 50vh;
   }
   .box h1,h2,h3,h4,h5,h6,p {
     color: var(--text-primary);
