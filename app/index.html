@@ -5,8 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="fireship/style.css">
+    <link rel="stylesheet" href="source/jquery.fancybox.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="source/jquery.fancybox.pack.js"></script>
     <title>Edwin Huang</title>
+    <script>
+      $(document).ready(function(){
+        $(".fancy").fancybox({
+            openSpeed:300,	//開啟速度，單位毫秒
+            closeSpeed:300,	//關閉速度
+            openEffect:"Elastic",	//開啟效果，彈出
+            closeEffect:"fade",	//關閉效果，淡出
+            padding:8	//邊框
+          });
+        });
+      $(document).ready(function() {
+        $(".various").fancybox({
+          maxWidth	: 1600,
+          maxHeight	: 1200,
+          fitToView	: false,
+          width		: '80%',
+          height		: '90%',
+          autoSize	: false,
+          closeClick	: false,
+          openEffect	: 'none',
+          closeEffect	: 'none'
+        });
+      });
+  </script>
   </head>
  <main>
     <div class="container">
@@ -32,8 +59,7 @@
             <img class="photo" src="./image/11.jpg" alt="Edwin Huang">
           </div>
           
-        </div><a href="#profile" class="RM SMM">Show me more</a>
-      </div>
+        <!-- </div><a href="#profile" class="RM SMM">Show me more</a></div> -->
     </div>
 </main> 
 
@@ -42,8 +68,9 @@
     <div class="box">
       <h1 class="title">Practice</h1>
       <h3>There are some of my practices learning website animations</h3>
-      <a href="https://scorpio77230.github.io/app/practice/3D/index.html">B</a>
-      <a href="https://scorpio77230.github.io/app/practice/page_animation/index_page.html">A</a>
+      <a class="fancy RM" data-fancybox-type="iframe" href="https://scorpio77230.github.io/app/practice/3D/index.html">
+      <p>3D Sneaker</p></a>
+      <a class="fancy RM" data-fancybox-type="iframe" href="https://scorpio77230.github.io/app/practice/page_animation/index_page.html"><p>Page Animation</p></a>
     </div>
   </div>
 </main>
@@ -53,7 +80,7 @@
     <div class="box">
       <h1 class="title">Protfolio</h1>
       <div class="row">
-        <h2>Working on it......</h2>
+        <h3>Working on it......</h2>
       </div>
     </div>
   </div>

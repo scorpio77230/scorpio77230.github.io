@@ -54,7 +54,6 @@ body,main,form,footer {
   .RM {
     position: relative;
     appearance: auto;
-    -webkit-writing-mode: horizontal-tb !important;
     text-rendering: auto;
     color: var(--text-secondary);
     letter-spacing: normal;
@@ -141,6 +140,11 @@ body,main,form,footer {
     max-width: 200px;
     border-radius: 10px;
   }
+  
+  .fancy {
+    margin: 10px 0 ;
+    text-decoration: none;
+  }
 
 
   /* NAVBAR 設定 */
@@ -163,10 +167,6 @@ body,main,form,footer {
   
   .nav-item {
     width: 100%;
-  }
-  
-  .nav-item:last-child {
-    /* margin-top: auto; */
   }
   
   .nav-link {
@@ -314,8 +314,8 @@ body,main,form,footer {
       max-width: 70vw;
       padding: 2.5em;
     }
-    h1 {
-      font-size: 3em;
+    .title {
+      font-size: 4em;
     }
     .box h2 {
       padding-top: 1.5rem;
@@ -326,7 +326,7 @@ body,main,form,footer {
     }
     .context {
       padding: 0;
-      font-size: 16px;
+      font-size: 20px;
       line-height: 2rem;
     }
     footer h4 {
@@ -337,6 +337,9 @@ body,main,form,footer {
     }
     .polaroid {
       position: relative;
+      left: 0;
+    }
+    .face {
       left: 0;
     }
   }
