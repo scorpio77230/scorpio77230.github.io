@@ -35,7 +35,7 @@ body,main,form,footer {
     background: #6649b8;
   }
   
-  main {
+  section {
     margin-left: 5rem;
     padding: 1rem;
   }
@@ -48,7 +48,7 @@ body,main,form,footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 96vh;
+    min-height: 96vh;
     width: auto;
   }
   .RM {
@@ -142,10 +142,62 @@ body,main,form,footer {
   }
   
   .fancy {
-    margin: 10px 0 ;
+    margin: 10px 10px;
     text-decoration: none;
   }
+  .prc {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    flex-wrap: wrap;
+  }
 
+  .demo {
+    max-width: 290px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-secondary);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1px);
+    box-sizing: border-box;
+    font: 400 1.5em 'Fira Sans';
+    word-wrap:break-word;
+    border-width: 1px;
+    border-radius: 2em;
+    border-style: solid;
+    border-color: rgba(200, 200, 200, 0.2);
+    opacity: 0.7;
+    transition: var(--transition-speed);
+  }
+  .demo:hover {
+    opacity: 1;
+  }
+
+  .demo img {
+    margin: 10px;
+    width: 200px;
+    height: 120px;
+    border-radius: 1em;
+    
+  }
+  .demo p {
+    margin: 8px;
+    padding: 10px 0;
+  }
+  
+  .demo a:nth-child(2) {
+    font-size: 0.8em;
+    text-decoration: none;
+  }
+  .demo a:nth-child(2) p{
+    color: rgba(0,0,0,0.7);
+  }
+  .demo a:nth-child(2):hover {
+    text-decoration: underline;
+    color: rgba(0, 0, 0,0.7);
+  }
 
   /* NAVBAR 設定 */
   .navbar {
@@ -156,6 +208,7 @@ body,main,form,footer {
   }
   
   .navbar-nav {
+    position: relative;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -306,7 +359,7 @@ body,main,form,footer {
       justify-content: center;
     }
     
-    main {
+    section {
       margin: 0;
       min-height: calc(100% - 5rem);
     }
@@ -342,6 +395,13 @@ body,main,form,footer {
     .face {
       left: 0;
     }
+    .prc {
+      flex-wrap: wrap-reverse;
+    }
+    .prc img {
+      display: none;
+    }
+
   }
 
   /* Large screens */

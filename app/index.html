@@ -13,11 +13,11 @@
     <script>
       $(document).ready(function(){
         $(".fancy").fancybox({
-            openSpeed:300,	//開啟速度，單位毫秒
-            closeSpeed:300,	//關閉速度
-            openEffect:"Elastic",	//開啟效果，彈出
-            closeEffect:"fade",	//關閉效果，淡出
-            padding:8	//邊框
+            openSpeed:300,
+            closeSpeed:300,
+            openEffect:"Elastic",
+            closeEffect:"fade",
+            padding:8
           });
         });
       $(document).ready(function() {
@@ -35,7 +35,7 @@
       });
   </script>
   </head>
- <main>
+ <section>
     <div class="container">
       <div class="face">
         <h1 class="title">HELLO</h1>
@@ -46,9 +46,9 @@
         </div>
       </div>
     </div>
-  </main>
+  </section>
 
-<main id="profile">
+<section id="profile">
     <div  class="container">
       <div  class="box">
         <h1 class="title">Profile</h1>
@@ -61,34 +61,50 @@
           
         <!-- </div><a href="#profile" class="RM SMM">Show me more</a></div> -->
     </div>
-</main> 
+</section> 
 
-<main id="practice">
+<section id="practice">
   <div class="container">
     <div class="box">
       <h1 class="title">Practice</h1>
       <h3>There are some of my practices learning website animations</h3>
-      <a class="fancy RM" data-fancybox-type="iframe" href="https://scorpio77230.github.io/app/practice/3D/index.html">
-      <p>3D Sneaker</p></a>
-      <a class="fancy RM" data-fancybox-type="iframe" href="https://scorpio77230.github.io/app/practice/page_animation/index_page.html"><p>Page Animation</p></a>
-      <a class="fancy RM" data-fancybox-type="iframe" href="https://scorpio77230.github.io/app/practice/Gradient Border Cards/index_GBC.html">
-        <p>Gradient Border Cards</p></a>
+      
+
+      <div class="prc">
+        <div class="demo">
+          <a class="fancy" data-fancybox-type="iframe" href="https://scorpio77230.github.io/app/practice/3D/index.html">
+          <img src="./image/3d.jpg"><p>3D Sneaker</p></a>
+          <a href="https://scorpio77230.github.io/app/practice/3D/index.html" target="_blank"><p>open in new window</p></a>
+        </div>
+        <div class="demo">
+          <a class="fancy" data-fancybox-type="iframe" href="https://scorpio77230.github.io/app/practice/page_animation/index_page.html"><img src="./image/page_animation.jpg">
+          <p>Page Animation</p></a>
+          <a href="https://scorpio77230.github.io/app/practice/page_animation/index_page.html" target="_blank"><p>open in new window</p></a>
+        </div>
+
+        <div class="demo">
+          <a class="fancy" data-fancybox-type="iframe" href="https://scorpio77230.github.io/app/practice/Gradient Border Cards/index_GBC.html"><img src="./image/gbc.jpg">
+          <p>Gradient Border Cards</p></a>
+          <a href="https://scorpio77230.github.io/app/practice/Gradient Border Cards/index_GBC.html" target="_blank"><p>open in new window</p></a>
+        </div>
+      </div>
     </div>
   </div>
-</main>
+</section>
 
-<main id="protfolio">
+<section id="protfolio">
   <div class="container">
     <div class="box">
       <h1 class="title">Protfolio</h1>
       <div class="row">
         <h3>Working on it......</h2>
+          
       </div>
     </div>
   </div>
-</main>
+</section>
 
-<main id="contact">
+<section id="contact">
   <div class="container">
     <div class="box" id="contactme">
       <h1 class="title">Contact Me</h1>
@@ -105,7 +121,7 @@
       </div>
     </div>
   </div>
-</main>
+</section>
 
 <footer>
   <div>
@@ -113,7 +129,6 @@
       ©
       <script>
           var dd = new Date();
-
           document.write(dd.getFullYear());
       </script>
       , Edwin Huang
@@ -193,7 +208,6 @@
     </ul>
     
   </nav>
-  <!-- <script src="/fireship/app.js"></script> -->
 </body>
 
 </html>
