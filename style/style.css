@@ -51,7 +51,7 @@ body,main,form,footer {
     min-height: 96vh;
     width: auto;
   }
-  .RM {
+  .btm {
     position: relative;
     appearance: auto;
     text-rendering: auto;
@@ -71,12 +71,12 @@ body,main,form,footer {
     text-decoration: none;
     transition: var(--transition-speed);
   }
-  .SMM {
+  .cc {
     margin: 2em 0 0 0;
     padding: 10px 18px;
     background-color: var(--bg-secondary);
   }
-  .SMM:hover{
+  .cc:hover{
     color: white;
     background-color: var(--my-cloor);
   }
@@ -90,10 +90,10 @@ body,main,form,footer {
   }
   .box {
     text-align: center;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
     padding: 2rem;
     border-radius: 3em;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
     border: solid 2px transparent;
     background-clip: padding-box;
     box-shadow: 0 20px 50px -10px rgba(46, 54, 68, 0.3);
@@ -159,8 +159,8 @@ body,main,form,footer {
     flex-direction: column;
     color: var(--text-secondary);
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(1px);
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter:blur(5px);
     box-sizing: border-box;
     font: 400 1.5em 'Fira Sans';
     word-wrap:break-word;
@@ -172,6 +172,7 @@ body,main,form,footer {
     transition: var(--transition-speed);
   }
   .demo:hover {
+    transform: scale(1.1,1.1);
     opacity: 1;
   }
 
@@ -325,7 +326,7 @@ body,main,form,footer {
     padding: 8px;
     border-radius: 6px;
     border: none;
-    background: rgba(200, 200, 200, 0.3);
+    background: rgba(235, 235, 235, 0.7);
     -webkit-transition: all 2s ease-in-out;
     -moz-transition: all 2s ease-in-out;
     -o-transition: all 2s ease-in-out;
@@ -401,7 +402,10 @@ body,main,form,footer {
     .prc img {
       display: none;
     }
-
+    .demo a:nth-child(2){
+      font-size: 0.7em;
+      margin: 0 30px;
+    }
   }
 
   /* Large screens */
