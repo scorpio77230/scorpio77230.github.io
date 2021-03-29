@@ -9,134 +9,118 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./source/jquery.fancybox.pack.js"></script>
+    <script src="./source/main.js"></script>
     <title>Edwin Huang</title>
-    <script>
-      $(document).ready(function(){
-        $(".fancy").fancybox({
-            openSpeed:300,
-            closeSpeed:300,
-            openEffect:"Elastic",
-            closeEffect:"fade",
-            padding:8
-          });
-        });
-      $(document).ready(function() {
-        $(".various").fancybox({
-          maxWidth	: 1600,
-          maxHeight	: 1200,
-          fitToView	: false,
-          width		: '80%',
-          height		: '90%',
-          autoSize	: false,
-          closeClick	: false,
-          openEffect	: 'none',
-          closeEffect	: 'none'
-        });
-      });
-  </script>
   </head>
- <section>
-    <div class="container">
-      <div class="face">
-        <h1 class="title">HELLO</h1>
-        <br>
-        <h2>This is Edwin Huang's Website</h2>
-        <div>
-          <a href="#profile" class="btm">Read More</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-<section id="profile">
-    <div  class="container">
-      <div  class="box">
-        <h1 class="title">Profile</h1>
-        <div class="row">
-          <p class="context">My name is Edwin Huang, I'm a web developer and a translator.<br> With a open-minded heart, I will try every posibilities.</p>
-            
-          <div class="polaroid">
-            <img class="photo" src="./image/11.jpg" alt="Edwin Huang">
+  <!-- <div class="test">
+    <img src="./image/parallax/6.png" class="layer" data-speed="-1" alt="">
+    <img src="./image/parallax/7.png" class="layer" data-speed="-1.5" alt="">
+    <img src="./image/parallax/5.png" class="layer" data-speed="2" alt="">
+  </div> -->
+    <section>
+      <div class="container">
+        <div class="face">
+          <h1 class="title">HELLO</h1>
+          <br>
+          <h2>This is Edwin Huang's Website</h2>
+          <div>
+            <a href="#profile" class="btm">Read More</a>
           </div>
-          
-        <!-- </div><a href="#profile" class="btm cc">Show me more</a></div> -->
-    </div>
-</section> 
-
-<section id="practice">
-  <div class="container">
-    <div class="box">
-      <h1 class="title">Practice</h1>
-      <h3>There are some of my practices learning website animations</h3>
-      
-
-      <div class="prc">
-        <div class="demo">
-          <a class="fancy" data-fancybox-type="iframe" href="https://scorpio77230.github.io/practice/3D/index.html">
-          <img src="./image/3d.jpg"><p>3D Sneaker</p></a>
-          <a href="https://scorpio77230.github.io/practice/3D/index.html" target="_blank"><p>Open in new tab</p></a>
-        </div>
-        <div class="demo">
-          <a class="fancy" data-fancybox-type="iframe" href="https://scorpio77230.github.io/practice/page_animation/index_page.html"><img src="./image/page_animation.jpg">
-          <p>Page Animation</p></a>
-          <a href="https://scorpio77230.github.io/practice/page_animation/index_page.html" target="_blank"><p>Open in new tab</p></a>
-        </div>
-
-        <div class="demo">
-          <a class="fancy" data-fancybox-type="iframe" href="https://scorpio77230.github.io/practice/Gradient Border Cards/index_GBC.html"><img src="./image/gbc.jpg">
-          <p>Gradient Border Cards</p></a>
-          <a href="https://scorpio77230.github.io/practice/Gradient Border Cards/index_GBC.html" target="_blank"><p>Open in new tab</p></a>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<section id="protfolio">
-  <div class="container">
-    <div class="box">
-      <h1 class="title">Protfolio</h1>
-      <div class="row">
-        <h3>Working on it......</h2>
-          
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="container">
-    <div class="box" id="contactme">
-      <h1 class="title">Contact Me</h1>
-      <div class="row">
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="this.onload=function(){window.location='/app/index.html'}"></iframe>
-        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeTLX_v5TVu04LS1oD2RhIOw1jcbzQ6-NcLJRGB-62LCT-V-A/formResponse" id="mG61Hd" method="POST" target="hidden_iframe" onSubmit="alert('Thank You!')">
-          <input type="text" name="entry.773102760" id="mG61Hd" placeholder="Name" required>
-          <input type="email" name="entry.978605643" id="mG61Hd" placeholder="E-Mail" required>
-          <input type="text" name="entry.1027956271" id="mG61Hd" placeholder="Subject" required>
-          <textarea name="entry.1553940941" placeholder="Message......" id="mG61Hd" cols="25" rows="8"></textarea>
-          <input type="submit" value="SUBMIT">
-        </form>
+    </section>
+    
+    <section id="profile">
+      <div  class="container">
+        <div  class="box" data-speed="1.5">
+          <h1 class="title">Profile</h1>
+          <div class="row">
+            <p class="context">My name is Edwin Huang, I'm a web developer and a translator.<br> With a open-minded heart, I will try every posibilities.</p>
+            
+            <div class="polaroid">
+              <img class="photo" src="./image/11.jpg" alt="Edwin Huang">
+            </div>
+            <!-- 20210330 -->
+            </div><a href="https://pda.104.com.tw/profile/share/5bDtoZ0UlGOfZAZtFW2rYevq4ChkmDSd" class="btm cc">Show me more</a></div>
+          </div>
+        </section> 
         
-      </div>
-    </div>
-  </div>
-</section>
+        <section id="practice">
+          <div class="container">
+            <div class="box" data-speed="-2">
+              <h1 class="title">Practice</h1>
+              <h3>There are some of my practices learning website animations</h3>
+              
+              
+              <div class="prc">
+                <div class="demo">
+          <a class="fancy" data-fancybox-type="iframe" href="https://scorpio77230.github.io/practice/3D/index.html">
+            <img src="./image/3d.jpg"><p>3D Sneaker</p></a>
+            <a href="https://scorpio77230.github.io/practice/3D/index.html" target="_blank"><p>Open in new tab</p></a>
+          </div>
+          <div class="demo">
+            <a class="fancy" data-fancybox-type="iframe" href="https://scorpio77230.github.io/practice/page_animation/index_page.html"><img src="./image/page_animation.jpg">
+              <p>Page Animation</p></a>
+              <a href="https://scorpio77230.github.io/practice/page_animation/index_page.html" target="_blank"><p>Open in new tab</p></a>
+            </div>
+            
+            <div class="demo">
+              <a class="fancy" data-fancybox-type="iframe" href="https://scorpio77230.github.io/practice/Gradient Border Cards/index_GBC.html"><img src="./image/gbc.jpg">
+                <p>Gradient Border Cards</p></a>
+                <a href="https://scorpio77230.github.io/practice/Gradient Border Cards/index_GBC.html" target="_blank"><p>Open in new tab</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- <section id="protfolio">
+        <div class="container">
+          <div class="box">
+            <h1 class="title">Protfolio</h1>
+            <div class="row">
+              <h3>Working on it......</h2>
+                
+              </div>
+            </div>
+          </div>
+        </section> -->
+        
+        <section id="contact">
+          <div class="container">
+            <div class="box" data-speed="2.5" id="contactme">
+              <h1 class="title">Contact Me</h1>
+              <div class="row">
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="this.onload=function(){window.location='/app/index.html'}"></iframe>
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeTLX_v5TVu04LS1oD2RhIOw1jcbzQ6-NcLJRGB-62LCT-V-A/formResponse" id="mG61Hd" method="POST" target="hidden_iframe" onSubmit="alert('Thank You!')">
+                  <input type="text" name="entry.773102760" id="mG61Hd" placeholder="Name" required>
+                  <input type="email" name="entry.978605643" id="mG61Hd" placeholder="E-Mail" required>
+                  <input type="text" name="entry.1027956271" id="mG61Hd" placeholder="Subject" required>
+                  <textarea name="entry.1553940941" placeholder="Message......" id="mG61Hd" cols="25" rows="8"></textarea>
+                  <input type="submit" value="SUBMIT">
+                </form>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <footer>
+          <div>
+            <h4>
+              ©
+              <script type="text/javascript">
+                var dd = new Date();
+                document.write(dd.getFullYear());
+              </script>
+              , Edwin Huang
+            </h4>
+          </div>
+        </footer>
+      
+        <body>
 
-<footer>
-  <div>
-    <h4>
-      ©
-      <script>
-          var dd = new Date();
-          document.write(dd.getFullYear());
-      </script>
-      , Edwin Huang
-    </h4>
-  </div>
-</footer>
-<body>
-  <nav class="navbar">
+ <nav class="navbar">
     <ul class="navbar-nav">
       <li class="logo">
         <a href="https://scorpio77230.github.io" class="nav-link">
@@ -178,7 +162,7 @@
         </a>
       </li>    
 
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a href="#protfolio" class="nav-link">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
             <path fill-rule="evenodd"
@@ -186,7 +170,7 @@
           </svg>
           <span class="link-text">Protfolio</span>
         </a>
-      </li>
+      </li> -->
       
 
       <!-- <li class="nav-item">
@@ -208,6 +192,7 @@
     </ul>
     
   </nav>
+  
 </body>
 
 </html>

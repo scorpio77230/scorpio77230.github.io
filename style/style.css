@@ -22,6 +22,24 @@ body,main,form,footer {
     padding: 0;
     overflow-x: hidden;
   }
+  .test {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: -5;
+  }
+  .test img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   
   body::-webkit-scrollbar {
     width: 0.25rem;
@@ -97,6 +115,9 @@ body,main,form,footer {
     border: solid 2px transparent;
     background-clip: padding-box;
     box-shadow: 0 20px 50px -10px rgba(46, 54, 68, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     min-height: 50vh;
     display: flex;
     justify-content: center;
@@ -159,7 +180,7 @@ body,main,form,footer {
     flex-direction: column;
     color: var(--text-secondary);
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter:blur(5px);
     box-sizing: border-box;
     font: 400 1.5em 'Fira Sans';
@@ -167,7 +188,9 @@ body,main,form,footer {
     border-width: 1px;
     border-radius: 2em;
     border-style: solid;
-    border-color: rgba(200, 200, 200, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     opacity: 0.7;
     transition: var(--transition-speed);
   }

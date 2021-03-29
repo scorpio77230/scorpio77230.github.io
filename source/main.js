@@ -13,3 +13,15 @@ $(document).ready(function(){
         autoSize	: true,
     });
 });
+
+document.addEventListener("mousemove", parallax);
+function parallax(e){
+  this.querySelectorAll('.box').forEach(box =>{
+    const speed = box.getAttribute('data-speed')
+    
+    const x =(window.innerWidth - e.pageX* speed)/200
+    const y =(window.innerHeight - e.pageY* speed) /200
+    
+    box.style.transform = `translateX(${x}px) translateY(${y}px)`
+  })
+}
