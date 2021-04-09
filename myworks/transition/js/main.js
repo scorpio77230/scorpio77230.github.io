@@ -13,17 +13,15 @@ const tl = gsap.timeline({paused: true, defaults: { duration: 0.5, ease: "rough"
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.utils.toArray(".container5").forEach((container5, i) => {
+gsap.utils.toArray(".container3").forEach((container3, i) => {
   ScrollTrigger.create({
-    trigger: container5,
+    trigger: container3,
     start: "top top", 
     // markers: true,
     pin: true, 
-    pinSpacing: false 
+    pinSpacing: false,
+    endTrigger: ".slides3",
+    end: "top top",
+    snap: 0.1
   });
-});
-
-
-ScrollTrigger.create({
-  snap: 1 / 4 // snap whole page to the closest section!
 });
