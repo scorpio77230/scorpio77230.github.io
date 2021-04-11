@@ -1,0 +1,8 @@
+.pnav {
+    position: fixed;
+}
+.pcontent {
+    position: relative;
+    margin-left: 25%;
+    margin-right: 2rem;
+}

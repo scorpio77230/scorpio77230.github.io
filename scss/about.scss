@@ -1,0 +1,66 @@
+@mixin flex($f) {
+    display: flex;
+    justify-content: $f;
+    align-items: center;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    @include flex(center);
+}
+.base {
+    padding: 1em;
+    width: 38%;
+    height: 100vh;
+    @include flex(space-evenly);
+    flex-direction: column;
+
+    &-links {
+        ul {
+            margin-top: 1em;
+            padding: 0;
+            @include flex(space-around);
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+.boxes {
+    width: 100%;
+    height: 40%;
+    &-1 {
+        width: 100%;
+        height: 130px;
+        background-color: rgb(119, 118, 117);
+        position: relative;
+        top: 10px;
+        left: 0px;
+        z-index: -1;
+    }
+
+    &-2 {
+        width: 100%;
+        height: 130px;
+        background-color:rgb(72, 133, 72);
+        position: relative;
+        top: -100px;
+        left: 15px;
+    }
+}
+
+main {
+    padding: 1em;
+    width: 62%;
+    @include flex(center);
+}
+.content {
+    margin: 1rem 0;
+}

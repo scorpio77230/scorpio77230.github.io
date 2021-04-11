@@ -1,0 +1,79 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
+@font-face {
+  font-family: 'cwTeXYen';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot);
+  src: url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot?#iefix) format('embedded-opentype'),
+       url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff2) format('woff2'),
+       url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format('woff'),
+       url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format('truetype');
+}
+body {
+    font-family: 'cwTeXYen';
+}
+
+/* Navbar */
+.myNav {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.5s;
+    border-radius: 0.2rem;
+}
+.myNav:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* 首頁 */
+#welcomePage {
+    background: url(../images/photo1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#welcomePage section {
+    color: var(--bs-cyan);
+}
+
+/* 自我介紹 */
+#aboutMe {
+    background:var(--bs-light);
+}
+#aboutMe section {
+    background-color: var(--bs-light);
+}
+
+#aboutMe img {
+    width: 300px;
+    height: 300px;
+}
+/* 作品集 */
+#scroll {
+    overflow: hidden;
+    z-index: -1;
+    display: inline-block;
+}
+#scroll .slide, .slide1, .slide2, .slide3  {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    flex-direction: column;
+}
+#scroll img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+/* footer */
+#myFooter {
+    background: url(../images/photo9.jpg) fixed;
+    height: 50vh;
+}
+#myFooter i {
+    font-size: 3rem; 
+    color: var(--bs-cyan);
+}
+#myFooter a {
+    text-decoration: none;
+}
