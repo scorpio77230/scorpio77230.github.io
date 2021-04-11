@@ -19,13 +19,14 @@ ScrollTrigger.create({
     snap: 1 / ( 4 - 1 ),
     pinsSpacing: false
 });
+
 const pageBg = document.querySelector("#welcomePage");
-const bgHeight = pageBg.clientHeight;
-gsap.to("#welcomePage", {
-    backgroundPosition: `50% ${bgHeight / 2}px`,
+pageBg.style.backgroundPosition = "50% 0px";
+gsap.to(pageBg, {
+    backgroundPosition: `50% ${innerHeight / 2}px`,
     ease: "none",
     scrollTrigger: {
-      trigger: "#welcomePage",
+      trigger: pageBg,
       start: "top top", 
       end: "bottom top",
       scrub: true
