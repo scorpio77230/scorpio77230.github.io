@@ -1,4 +1,13 @@
+@font-face {
+  font-family: 'cwTeXYen';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot);
+  src: url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot?#iefix) format("embedded-opentype"), url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff2) format("woff2"), url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format("woff"), url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format("truetype");
+}
+
 * {
+  font-family: 'cwTeXYen';
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -35,6 +44,16 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.base img {
+  border-radius: 70% 30% 69% 31% / 30% 69% 31% 70%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.base img:hover {
+  border-radius: 30% 70% 33% 67% / 71% 36% 64% 29%;
 }
 
 .base-links ul {
@@ -83,18 +102,40 @@
 main {
   padding: 1em;
   width: 62%;
+  height: 85%;
+  background: #87996a;
+}
+
+main .row {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .content {
+  background: #f87996;
   margin: 1rem 0;
+}
+
+.content .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: row;
+      -ms-flex-pack: row;
+          justify-content: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=about.css.map */
