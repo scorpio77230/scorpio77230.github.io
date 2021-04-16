@@ -18,7 +18,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    background: #FFBBEC;
+}
 .container {
+
     width: 100vw;
     height: 100vh;
     @include flex(center);
@@ -28,7 +32,7 @@
     padding: 1em;
     width: 38%;
     height: 100vh;
-    @include flex(space-evenly);
+    @include flex(space-around);
     flex-direction: column;
     
     img {
@@ -58,17 +62,18 @@
     &-1 {
         width: 100%;
         height: 130px;
-        background-color: rgb(119, 118, 117);
+        background-color: rgba(119, 118, 117, 0.5);
         position: relative;
         top: 10px;
         left: 0px;
-        z-index: -1;
+        // z-index: -1;
     }
 
     &-2 {
+        padding: 1rem;
         width: 100%;
         height: 130px;
-        background-color:rgb(72, 133, 72);
+        background-color:rgba(72, 133, 72, 0.6);
         position: relative;
         top: -100px;
         left: 15px;
@@ -79,7 +84,6 @@ main {
     padding: 1em;
     width: 62%;
     height: 85%;
-    background: #87996a;
     
     .row {
         height: 100%;
@@ -88,10 +92,33 @@ main {
     }
 }
 .content {
-    background: #f87996;
     margin: 1rem 0;
     .wrap {
-        @include flex(row);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;      
+        &-top {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            div {
+                margin-right: 5px;
+            }
+        }
         
     }
+    .wrap-lists {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center ;
+        align-items: flex-start;
+        flex-direction: row;
+        div {
+            margin-right: 5px;
+        }
+    }
+}
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 6px;
 }
