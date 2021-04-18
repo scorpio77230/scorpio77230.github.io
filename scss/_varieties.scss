@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'cwTeXYen';
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot);
+    src: url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot?#iefix) format('embedded-opentype'),
+         url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff2) format('woff2'),
+         url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format('woff'),
+         url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format('truetype');
+  }
+* {
+  font-family: 'cwTeXYen';
+  margin: 0;
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 6px;
+}
+h1 {
+    font-size: 35px;
+}
+h2 {
+    font-size: 28px;
+}
+p {
+    font-size: 1.2em;
+}

@@ -1,55 +1,64 @@
+@import "./varieties";
 @mixin flex($f) {
     display: flex;
     justify-content: $f;
     align-items: center;
 }
-@font-face {
-      font-family: 'cwTeXYen';
-      font-style: normal;
-      font-weight: 500;
-      src: url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot);
-      src: url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot?#iefix) format('embedded-opentype'),
-           url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff2) format('woff2'),
-           url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format('woff'),
-           url(https://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format('truetype');
+@mixin mobile{
+    @media(max-width:600px){
+      @content;
     }
-* {
-    font-family: 'cwTeXYen';
-    margin: 0;
-    box-sizing: border-box;
-}
+  }
 body {
-    background: #FFBBEC;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(315deg, #FBAB7E 0%, #F7CE68 100%);
+    h1 {
+            text-align: center;
+        }
+    @include mobile(){
+        overflow-x: hidden;
+        
+    }
 }
 .container {
-
-    width: 100vw;
     height: 100vh;
     @include flex(center);
+    @include mobile(){
+        height: auto;
+        flex-direction: column;
+    }
 }
 .base {
-    
     padding: 1em;
     width: 38%;
-    height: 100vh;
-    @include flex(space-around);
+    @include flex(center);
     flex-direction: column;
+    @include mobile(){
+        width: 90%;
+    }
     
     img {
+        width: 300px;
         border-radius: 70% 30% 69% 31% / 30% 69% 31% 70% ;
+        box-shadow: 10px 25px 30px  rgba(29, 29, 37, 0.7);
+        border-top: 2px solid rgba(255, 255, 255, 0.7);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
         transition: all 0.5s;
+        @include mobile(){
+            max-width: 250px;
+        }
     }
     img:hover {
+        transform: scale(1.15);
         border-radius: 30% 70% 33% 67% / 71% 36% 64% 29% ;
     }
     &-links {
         ul {
-            margin-top: 1em;
+            margin-top: 2rem;
             padding: 0;
             @include flex(space-around);
             list-style: none;
         }
-
         a {
             text-decoration: none;
             color: black;
@@ -59,66 +68,90 @@ body {
 .boxes {
     width: 100%;
     height: 40%;
+    @include mobile(){
+        position: relative;
+        top: 50px;
+    }
     &-1 {
         width: 100%;
-        height: 130px;
+        height: 150px;
         background-color: rgba(119, 118, 117, 0.5);
         position: relative;
-        top: 10px;
-        left: 0px;
-        // z-index: -1;
+        top: 50px;
+        left: -10px;
     }
 
     &-2 {
-        padding: 1rem;
         width: 100%;
-        height: 130px;
+        height: 150px;
         background-color:rgba(72, 133, 72, 0.6);
         position: relative;
-        top: -100px;
+        top: -75px;
         left: 15px;
+        padding: 5px;
     }
 }
 
 main {
-    padding: 1em;
     width: 62%;
-    height: 85%;
-    
+    height: 100%;
+    @include mobile(){
+        width: 100%;
+    }
     .row {
         height: 100%;
-        @include flex(space-around);
+        @include flex(center);
         flex-direction: column;
     }
 }
 .content {
-    margin: 1rem 0;
+    width: 100%;
     .wrap {
         display: flex;
+        justify-content: center;
         flex-direction: column;
-        align-items: flex-start;      
+        align-items: flex-start;
         &-top {
+            width: calc(100% - 2rem);
             display:flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             flex-direction: row;
-            div {
-                margin-right: 5px;
+            @include mobile(){
+                flex-direction: column;
             }
         }
         
     }
     .wrap-lists {
-        margin-top: 10px;
         display: flex;
-        justify-content: center ;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: stretch;
         flex-direction: row;
+        width: 100%;
+        padding: 10px 0;
+        @include mobile(){
+           flex-direction: column;
+           align-items: center;
+        }
         div {
-            margin-right: 5px;
+            height: 12em;
+            width: 16em;
         }
     }
 }
-h1,h2,h3,h4,h5,h6 {
-    margin-bottom: 6px;
+.back {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 50px  rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+.p-1 {
+    padding: 10px;
+}
+.m-1 {
+    margin: 5px 10px;
 }

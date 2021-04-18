@@ -65,6 +65,26 @@ body {
     height: 100vh;
     object-fit: cover;
 }
+.slide div{
+    background-image: url(../images/photo6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.slide1 div {
+    background: url(../images/photo2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.slide2 div {
+    background: url(../images/photo3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.slide3 div {
+    background: url(../images/photo4.jpg);
+    background-position: center;
+    background-size: cover;
+}
 /* footer */
 #myFooter {
     background: url(../images/photo9.jpg) fixed;

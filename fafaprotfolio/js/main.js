@@ -13,7 +13,7 @@ ScrollTrigger.create({
     trigger: "#scroll",
     start: "top top",
     end: "+=4000",
-    scrub: true,
+    scrub: 1,
     pin: true,
     anticipatePin: 1,
     snap: 1 / ( 4 - 1 ),
