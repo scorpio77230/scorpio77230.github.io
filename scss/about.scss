@@ -9,16 +9,16 @@
       @content;
     }
   }
+@mixin scale($s) {
+    transform: scale($s);
+}
 body {
     background-color: #FBAB7E;
     background-image: linear-gradient(315deg, #FBAB7E 0%, #F7CE68 100%);
+    overflow-x: hidden;
     h1 {
             text-align: center;
-        }
-    @include mobile(){
-        overflow-x: hidden;
-        
-    }
+        } 
 }
 .container {
     height: 100vh;
@@ -49,20 +49,42 @@ body {
         }
     }
     img:hover {
-        transform: scale(1.15);
+        @include scale(1.15);
         border-radius: 30% 70% 33% 67% / 71% 36% 64% 29% ;
     }
     &-links {
         ul {
-            margin-top: 2rem;
+            margin-top: 2.5rem;
             padding: 0;
             @include flex(space-around);
             list-style: none;
+            a {
+                text-decoration: none;
+                font-weight: 700;
+                color: black;            
+                display: block;
+                position: relative;
+                border-radius: 10px;
+                text-align: center;
+                border: 2px solid rgba(255, 255, 255, 0.7);
+                border-right: 2px solid rgba(255, 255, 255, 0.1);
+                border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+                background-color: rgba(255, 255, 255, 0.2);
+                transition: all 0.5s;
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0);
+                    border: 2px solid rgba(255, 255, 255, 0.1);
+                    border-right: 2px solid rgba(255, 255, 255, 0.7);
+                    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+                }
+                li {
+                    width: 80px;
+                    padding: 4px;
+                }
+            }
         }
-        a {
-            text-decoration: none;
-            color: black;
-        }
+        
+        
     }
 }
 .boxes {
@@ -79,6 +101,7 @@ body {
         position: relative;
         top: 50px;
         left: -10px;
+        animation: animate 10s linear infinite;
     }
 
     &-2 {
@@ -89,6 +112,20 @@ body {
         top: -75px;
         left: 15px;
         padding: 5px;
+        animation: animate 10s linear infinite;
+        animation-delay: -5s;
+        transition: all 1s;
+        &:hover {
+            @include scale(1.1);
+        }
+    }
+}
+@keyframes animate {
+    0%,100%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
     }
 }
 
@@ -117,10 +154,15 @@ main {
             justify-content: space-around;
             align-items: center;
             flex-direction: row;
+            transition: all 1s;
+            &:hover {
+                @include scale(1.1);
+            }
             @include mobile(){
                 flex-direction: column;
             }
         }
+        
         
     }
     .wrap-lists {
@@ -137,6 +179,10 @@ main {
         div {
             height: 12em;
             width: 16em;
+            transition: all 1s;
+            &:hover {
+                @include scale(1.1);
+            }
         }
     }
 }
@@ -147,7 +193,6 @@ main {
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-right: 2px solid rgba(255, 255, 255, 0.2);
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
 }
 .p-1 {
     padding: 10px;

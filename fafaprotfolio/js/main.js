@@ -10,13 +10,14 @@ tl.from(".slide1",{yPercent: 100})
 
 ScrollTrigger.create({
     animation: tl,
+    ease: "expo.inout",
     trigger: "#scroll",
     start: "top top",
     end: "+=4000",
     scrub: 1,
     pin: true,
     anticipatePin: 1,
-    snap: 1 / ( 4 - 1 ),
+    snap: 1 / 3,
     pinsSpacing: false
 });
 
