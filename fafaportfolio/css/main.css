@@ -12,6 +12,9 @@
 body {
     font-family: 'cwTeXYen';
 }
+.bg-warm {
+    background-color: var(--bs-orange) !important;
+}
 
 /* Navbar */
 .myNav {
@@ -31,7 +34,7 @@ body {
     background-repeat: no-repeat;
 }
 #welcomePage section {
-    color: var(--bs-cyan);
+    color: var(--bs-white);
 }
 
 /* 自我介紹 */
@@ -45,6 +48,19 @@ body {
 #aboutMe img {
     width: 300px;
     height: 300px;
+}
+.icon {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--bs-blue);
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+}
+.wrap {
+    margin-top: 1rem;
 }
 /* 作品集 */
 #scroll {
@@ -87,6 +103,9 @@ body {
 .z-10 {
     z-index: 10 !important;
 }
+.btn-outline-light {
+    border: none;
+}
 /* footer */
 #myFooter {
     background: url(../images/photo9.jpg) fixed;
@@ -94,8 +113,21 @@ body {
 }
 #myFooter i {
     font-size: 3rem; 
-    color: var(--bs-cyan);
 }
 #myFooter a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(41, 60, 233, 0.8);
+    border-radius: 50px;
+    line-height: 105px;
+    padding: auto;
     text-decoration: none;
+    transition: all 0.5s ease-in-out;
 }
+#myFooter a:hover {
+    transform: scale(1.2);
+}
+
+
+
