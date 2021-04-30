@@ -14,7 +14,7 @@ ScrollTrigger.create({
     trigger: "#scroll",
     start: "top top",
     end: "+=4000",
-    scrub: 1,
+    scrub: true,
     pin: true,
     anticipatePin: 1,
     snap: 1 / 3,
@@ -22,7 +22,7 @@ ScrollTrigger.create({
 });
 
 const tl2 = gsap.timeline();
-tl2.from(".progress-bar",{x: -500});
+tl2.from(".progress-bar",{x: -500, duration:1.5, stagger:0.5});
 ScrollTrigger.create({
   animation: tl2,
   ease: "expo.inout",
@@ -40,3 +40,24 @@ ScrollTrigger.create({
 //       scrub: true
 //     }
 //   });
+const logo = document.querySelector('.logo');
+const head = document.querySelector('.headline');
+
+// const tl3 = gsap.timeline();
+// tl3.from(logo, {opacity:0, x:-100, duration:1})
+//     .from(head, {opacity:0, y:100, duration:2}, "-=.5");
+
+const ani = document.querySelector('.ani');
+const ani2 = document.querySelector('.ani2');
+const ani3 = document.querySelector('.ani3');
+const ani4 = document.querySelector('.ani4');
+const wel = gsap.timeline({ defaults: {ease:"slow (0.7, 0.7, false)"}})
+wel.from(logo, {opacity:0, x:-100, duration:1})
+  .from(head, {opacity:0, y:100, duration:2}, "-=.5")
+  .to(ani4, {clipPath:'polygon(100% 0, 100% 0%, 100% 100%, 100% 100%)'})  
+  .to(ani3, {clipPath: 'polygon(100% 0, 100% 0%, 100% 100%, 100% 100%)'}) 
+  .to(ani2, {clipPath: 'polygon(100% 0, 100% 0%, 100% 100%, 100% 100%)'})
+  .to(ani2, {clipPath: 'polygon(0 0, 100% 0%, 100% 100%, 0% 100%)'}, "-=1")
+  .to(ani3, {clipPath: 'polygon(0 0, 100% 0%, 100% 100%, 0% 100%)'}, "-=1")
+  .to(ani4, {clipPath: 'polygon(0 0, 100% 0%, 100% 100%, 0% 100%)'}, "-=1")
+  

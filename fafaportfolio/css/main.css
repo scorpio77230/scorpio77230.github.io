@@ -28,13 +28,52 @@ body {
 
 /* 首頁 */
 #welcomePage {
-    background: url(../images/photo1.jpg);
+    /* background: url(../images/photo1.jpg); */
+    background: #000;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 #welcomePage section {
     color: var(--bs-white);
+}
+.ani, .ani2, .ani3, .ani4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    transition: all .5s;
+}
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    font-size: 3.5em;
+    font-weight: 700;
+}
+.headline {
+    position: absolute;
+    top: 60%;
+    left: 12%;
+    font-size: 3.5em;
+    font-weight: 500;
+    margin-left: -5px;
+}
+@media (max-width: 768px) {
+    .logo {
+        top: 40%;
+        left: -20%;
+        font-size: 3em;
+        white-space:nowrap;
+        transform: rotate(-90deg);
+    }
+    .headline {
+        top: 80%;
+        left: 10%;
+        font-size: 1.8em;
+    }
 }
 
 /* 自我介紹 */
