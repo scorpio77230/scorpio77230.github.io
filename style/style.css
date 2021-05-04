@@ -23,7 +23,7 @@ body,main,form,footer {
     /* overflow-x: hidden; */
   }
   .parallax {
-    background-color: rgb(151, 217, 225);
+    background-color: rgb(181, 210, 214);
     position: fixed;
     width: 100%;
     height: 100%;
@@ -69,6 +69,22 @@ body,main,form,footer {
     align-items: center;
     min-height: 96vh;
     width: auto;
+  }
+  .scorllDown {
+    position: absolute;
+    top: 80%;
+    animation: animate 1.5s linear infinite;
+  }
+  @keyframes animate {
+    0%,100%{
+      transform: translateY(-5px);
+      opacity: 0;
+    }
+    50%{
+      transform: translateY(10px);
+      opacity: 1;
+
+  }
   }
   .btm {
     position: relative;
@@ -406,6 +422,7 @@ body,main,form,footer {
       padding: 0;
       font-size: 20px;
       line-height: 2rem;
+      margin-bottom: 2em;
     }
     footer h4 {
       display: none
@@ -423,8 +440,8 @@ body,main,form,footer {
     .prc {
       flex-wrap: wrap-reverse;
     }
-    .prc img {
-      display: none;
+    .demoTitle {
+      font-size: 0.9em;
     }
     .demo a:nth-child(2){
       font-size: 0.7em;

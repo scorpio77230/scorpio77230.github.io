@@ -57,7 +57,7 @@ wel.from(logo, {opacity:0, x:-100, duration:1})
   .to(ani4, {clipPath:'polygon(100% 0, 100% 0%, 100% 100%, 100% 100%)'})  
   .to(ani3, {clipPath: 'polygon(100% 0, 100% 0%, 100% 100%, 100% 100%)'}) 
   .to(ani2, {clipPath: 'polygon(100% 0, 100% 0%, 100% 100%, 100% 100%)'})
-  .to(ani2, {clipPath: 'polygon(0 0, 100% 0%, 100% 100%, 0% 100%)'}, "-=1")
+  .to(ani2, {clipPath: 'polygon(0 0, 100% 0%, 100% 100%, 0% 100%)'}, "-=2")
   .to(ani3, {clipPath: 'polygon(0 0, 100% 0%, 100% 100%, 0% 100%)'}, "-=1")
   .to(ani4, {clipPath: 'polygon(0 0, 100% 0%, 100% 100%, 0% 100%)'}, "-=1")
   
