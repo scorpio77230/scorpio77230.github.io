@@ -1,8 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+body {
+    background-color: #e7edf1;
+}
+hr {
+  color: #fff;
+}
 .pnav {
+    background-color: #164f57;
     position: fixed;
+    width: 15%;
+    height: 100vh;
 }
 .pcontent {
     position: relative;
-    margin-left: 25%;
+    margin-left: 15%;
     margin-right: 2rem;
 }
+.pcontent h1 {
+    line-height: 2.5rem;
+    padding-top: 1.5rem;
+}
+.btn-glass {
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.5s;
+    -webkit-box-shadow: 2px 2px 20px 3px rgba(0,0,0,0.2); 
+    box-shadow: 2px 2px 20px 3px rgba(0,0,0,0.2);
+  }
+  .btn-glass:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  }
+  .btn-check:focus + .btn-glass, .btn-glass:focus {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: #124466;
+    box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
+  }
+  .btn-check:checked + .btn-glass, .btn-check:active + .btn-glass, .btn-glass:active, .btn-glass.active, .show > .btn-glass.dropdown-toggle {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  }
+  .btn-check:checked + .btn-glass:focus, .btn-check:active + .btn-glass:focus, .btn-glass:active:focus, .btn-glass.active:focus, .show > .btn-glass.dropdown-toggle:focus {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  }
+
+  .card {
+    -webkit-box-shadow: 5px 5px 20px rgba(0,0,0,0.7); 
+    box-shadow: 5px 5px 20px  rgba(0,0,0,0.7);
+  }
