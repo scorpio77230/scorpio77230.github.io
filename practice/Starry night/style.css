@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.scene {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(2,0,29,1) 0%, rgba(9,9,121,1) 80%, rgba(0,15,173,1) 100%);
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.moon {
+  position: absolute;
+  top: 150px;
+  left: 400px;
+  width: 250px;
+  height: 250px;
+  background: rgba(240, 250, 250, 1);
+  border-radius: 50%;
+  z-index: 100;
+}
+.moon::after {
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: 70px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(rgb(2,0,29) 0%, rgba(9,9,121,1) 80%);
+  background-attachment: fixed;
+}
+.scene i {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  
+}
