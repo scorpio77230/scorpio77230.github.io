@@ -9,8 +9,8 @@ hr {
   color: #fff;
 }
 img {
-  min-width: 300px;
-  min-height: 300px;
+  min-width: 200px;
+  min-height: 200px;
 }
 .pnav {
     background-color: #164f57;
@@ -84,10 +84,14 @@ img {
       z-index: 3;
       margin: 0;
       padding: 0;
+      justify-content: space-evenly;
+    }
+    .btn {
+      font-size: 18px;
+      padding: 0.6rem;
     }
     .pnav hr {
-      transform: translate(90deg);
-      margin:0 2px 0 2px;
+      margin:0 3px;
     }
   .pcontent {
       position: relative;
