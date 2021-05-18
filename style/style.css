@@ -488,10 +488,10 @@ body,main,form,footer {
   }
 
   .fancybox-slide--iframe .fancybox-content {
-    max-width  : 1920px;
-    max-height : 1600px;
-    min-width  : 80%;
-    min-height : 80%;
+    max-width  : 1600px;
+    max-height : 1200px;
+    width  : 80%;
+    height : 80%;
     margin: 0;
     background: #191919;
   }
