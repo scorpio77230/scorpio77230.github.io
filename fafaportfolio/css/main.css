@@ -1,178 +1,187 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
 * {
-    --f-blue: #164f75;
-    --f-navy: #0f3f60;
-    --f-gray: #e7edf1;
+  --f-blue: #164f75;
+  --f-navy: #0f3f60;
+  --f-gray: #e7edf1;
 }
 body {
-    font-family: 'Noto Sans TC', sans-serif;
-    background-color: var(--f-navy);
-    overflow-x:hidden;
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: var(--f-navy);
+  overflow-x: hidden;
 }
 /* Navbar */
 .myNav {
-    background-color: rgba(255, 255, 255, 0.3);
-    transition: all 0.5s;
-    border-radius: 0.2rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+  border-radius: 0.2rem;
 }
 .myNav:hover {
-    background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
 .nav-link {
-    color: var(--f-navy);
+  color: var(--f-navy);
 }
 
 /* 首頁 */
 #welcomePage {
-    background: url(../images/carousel/carousel_0.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background: url(../images/carousel/carousel_0.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #welcomePage section {
-    color: var(--bs-white);
+  color: var(--bs-white);
 }
-.ani, .ani2, .ani3, .ani4, .ani5, .ani6, .ani7{
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    height: 100vh;
-    transition: all;
+.ani,
+.ani2,
+.ani3,
+.ani4,
+.ani5,
+.ani6,
+.ani7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  height: 100vh;
+  transition: all;
 }
 .logo {
-    position: absolute;
-    top: 50%;
-    left: 12%;
-    font-size: 3.5em;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.8);
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  font-size: 3.5em;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 .headline {
-    position: absolute;
-    top: 60%;
-    left: 12%;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: calc(2rem + 0.5vw);
-    font-weight: 400;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 60%;
+  left: 12%;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: calc(2rem + 0.5vw);
+  font-weight: 400;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 @media (max-width: 768px) {
-    .logo {
-        top: 40%;
-        left: -20%;
-        font-size: 3em;
-        white-space:nowrap;
-        transform: rotate(-90deg);
-    }
-    .headline {
-        top: 80%;
-        left: 10%;
-        font-size: 1.8em;
-    }
+  .logo {
+    top: 40%;
+    left: -20%;
+    font-size: 3em;
+    white-space: nowrap;
+    transform: rotate(-90deg);
+  }
+  .headline {
+    top: 80%;
+    left: 10%;
+    font-size: 1.8em;
+  }
 }
 
 /* 自我介紹 */
 #aboutMe {
-    background:var(--f-gray);
+  background: var(--f-gray);
 }
 #aboutMe section {
-    background-color: var(--f-gray);
+  background-color: var(--f-gray);
 }
 
 #aboutMe img {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
 }
 #aboutMe h1 {
-    font-size: calc(2rem + 0.5vw);
-    font-weight: 700;
+  font-size: calc(2rem + 0.5vw);
+  font-weight: 700;
 }
 .icon {
-    position: relative;
-    width: 45px;
-    height: 45px;
+  position: relative;
+  width: 45px;
+  height: 45px;
 }
 .dw {
-    background-image: url(../images/icons/Dreamweaver.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+  background-image: url(../images/icons/Dreamweaver.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .ai {
-    background-image: url(../images/icons/Illustrator.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+  background-image: url(../images/icons/Illustrator.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .id {
-    background-image: url(../images/icons/InDesign.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+  background-image: url(../images/icons/InDesign.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.pr{
-    background-image: url(../images/icons/Premiere\ Pro.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+.pr {
+  background-image: url(../images/icons/Premiere\ Pro.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.ps{
-    background-image: url(../images/icons/Photoshop.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+.ps {
+  background-image: url(../images/icons/Photoshop.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .wrap {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 /* 作品集 */
 #scroll {
-    overflow: hidden;
-    display: inline-block;
+  overflow: hidden;
+  display: inline-block;
 }
-#scroll .slide, .slide1, .slide2, .slide3  {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    flex-direction: column;
+#scroll .slide,
+.slide1,
+.slide2,
+.slide3 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  flex-direction: column;
 }
 #scroll img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
-.slide div{
-    background-image: url(../images/cover/photograph.jpg);
-    background-position: center;
-    background-size: cover;
+.slide div {
+  background-image: url(../images/cover/photograph.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .slide1 div {
-    background: url(../images//cover/graphic.jpg);
-    background-position: center;
-    background-size: cover;
+  background: url(../images//cover/graphic.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .slide2 div {
-    background: url(../images/photo3.jpg);
-    background-position: center;
-    background-size: cover;
+  background: url(../images/photo3.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .slide3 div {
-    background: url(../images/cover/projects.jpg);
-    background-position: center;
-    background-size: cover;
+  background: url(../images/cover/projects.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .z-10 {
-    z-index: 10 !important;
+  z-index: 10 !important;
 }
 .btn-outline-light {
-    border: none;
+  border: none;
 }
 /* footer */
 .myFooter {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* .contact {
     position: relative;
@@ -180,78 +189,88 @@ body {
     left: 0;
 } */
 .myFooter a {
-    display: block;
-    width: 13em;
-    height: 13em;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-    line-height: 13em;
-    text-decoration: none;
-    transition: all 0.5s ease-in-out;
-    padding: auto;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto; 
-    margin-top: 2em;
-    /* margin: 2rem; */
+  display: block;
+  width: 13em;
+  height: 13em;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  line-height: 13em;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  padding: auto;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  /* margin: 2rem; */
 }
 .myFooter a:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 .myFooter i {
-    color: var(--f-blue);
-    font-size: 6em; 
+  color: var(--f-blue);
+  font-size: 6em;
 }
 @media (max-width: 768px) {
-    .contact {
-        position: relative;
-        top: 0;
-        left: 0;
-    }
-    .myFooter a {
-        width: 8em;
-        height: 8em;
-        line-height: 8em;
-        margin-top: 1em;
-    }
-    .myFooter i {
-        font-size: 5em; 
-    }
+  .contact {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .myFooter a {
+    width: 8em;
+    height: 8em;
+    line-height: 8em;
+    margin-top: 1em;
+  }
+  .myFooter i {
+    font-size: 5em;
+  }
 }
 
 .opac {
-    opacity: 0.5;
-    transition: all 0.5s ease-in-out;
+  opacity: 0.5;
+  transition: all 0.5s ease-in-out;
 }
 .opac:hover {
-    opacity: 1;
+  opacity: 1;
 }
 .btn-navy {
-    color: #fff;
-    background-color: var(--f-blue);
-    border-color: var(--f-blue);
-  }
-  .btn-navy:hover {
-    color: #fff;
-    background-color: var(--f-navy);
-    border-color: #124466;
-  }
-  .btn-check:focus + .btn-navy, .btn-navy:focus {
-    color: #fff;
-    background-color: var(--f-navy);
-    border-color: #124466;
-    box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
-  }
-  .btn-check:checked + .btn-navy, .btn-check:active + .btn-navy, .btn-navy:active, .btn-navy.active, .show > .btn-navy.dropdown-toggle {
-    color: #fff;
-    background-color: #124466;
-    border-color: #113a55;
-  }
-  .btn-check:checked + .btn-navy:focus, .btn-check:active + .btn-navy:focus, .btn-navy:active:focus, .btn-navy.active:focus, .show > .btn-navy.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
-  }
-  .btn-navy:disabled, .btn-navy.disabled {
-    color: #fff;
-    background-color: var(--f-blue);
-    border-color: var(--f-blue);
-  }
+  color: #fff;
+  background-color: var(--f-blue);
+  border-color: var(--f-blue);
+}
+.btn-navy:hover {
+  color: #fff;
+  background-color: var(--f-navy);
+  border-color: #124466;
+}
+.btn-check:focus + .btn-navy,
+.btn-navy:focus {
+  color: #fff;
+  background-color: var(--f-navy);
+  border-color: #124466;
+  box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
+}
+.btn-check:checked + .btn-navy,
+.btn-check:active + .btn-navy,
+.btn-navy:active,
+.btn-navy.active,
+.show > .btn-navy.dropdown-toggle {
+  color: #fff;
+  background-color: #124466;
+  border-color: #113a55;
+}
+.btn-check:checked + .btn-navy:focus,
+.btn-check:active + .btn-navy:focus,
+.btn-navy:active:focus,
+.btn-navy.active:focus,
+.show > .btn-navy.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
+}
+.btn-navy:disabled,
+.btn-navy.disabled {
+  color: #fff;
+  background-color: var(--f-blue);
+  border-color: var(--f-blue);
+}

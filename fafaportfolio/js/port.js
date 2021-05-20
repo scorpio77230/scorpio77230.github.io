@@ -1,15 +1,10 @@
 $('[data-fancybox="images"]').fancybox({
-  buttons : [ 
-    'share',
-    'zoom',
-    'fullScreen',
-    'close'
-  ],
+  buttons: ["share", "zoom", "fullScreen", "close"],
   image: {
-    preload: true
+    preload: true,
   },
   thumbs: {
-    autoStart: true
+    autoStart: true,
   },
   // Open/close animation type
   // Possible values:
@@ -33,24 +28,24 @@ $('[data-fancybox="images"]').fancybox({
   transitionEffect: "tube",
   spinnerTpl: '<div class="fancybox-loading"></div>',
   errorTpl: '<div class="fancybox-error"><p>{{ERROR}}</p></div>',
-  
+
   mobile: {
     preventCaptionOverlap: false,
     idleTime: false,
     thumbs: {
-      autoStart: false
+      autoStart: false,
     },
-    clickContent: function(current, event) {
+    clickContent: function (current, event) {
       return current.type === "image" ? "toggleControls" : false;
     },
-    clickSlide: function(current, event) {
+    clickSlide: function (current, event) {
       return current.type === "image" ? "toggleControls" : "close";
     },
-    dblclickContent: function(current, event) {
+    dblclickContent: function (current, event) {
       return current.type === "image" ? "zoom" : false;
     },
-    dblclickSlide: function(current, event) {
+    dblclickSlide: function (current, event) {
       return current.type === "image" ? "zoom" : false;
-    }
+    },
   },
 });
