@@ -291,6 +291,16 @@
       opacity: 0,
       duration: .5
     });
+    gsap.from("#portfolio", {
+      scrollTrigger: {
+        trigger: "#portfolio",
+        start: "top center",
+        toggleActions: "play reverse restart reverse"
+      },
+      x: -150,
+      opacity: 0,
+      duration: .5
+    });
     const tl = gsap.timeline({ defaults: { ease: "slow (0.7, 0.7, false)" } });
     const title = document.querySelector('.title');
     const head = document.querySelector('.head');
