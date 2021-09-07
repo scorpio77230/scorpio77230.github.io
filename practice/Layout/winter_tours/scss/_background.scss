@@ -1,0 +1,23 @@
+.backimg {
+  position: absolute;
+  
+  width: 100%;
+  // height: 100vh;
+  z-index: -100;
+  .topback {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(70%);
+  }
+  .backblur {
+    background-color: #66869b;
+    background: linear-gradient(0deg, rgba(102,134,155,1) 80%, rgba(2,0,36,0.2) 100%);
+    backdrop-filter: blur(20px);
+    position: relative;
+    top: -5rem;
+    height: 120vh;
+  }
+}

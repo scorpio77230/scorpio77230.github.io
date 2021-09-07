@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap");
+@import "./background";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+header {
+  width: 100%;
+  nav {
+    margin: 0 2rem;
+    width: calc(100% - 4.1rem);
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      margin: 1rem 0;
+      li {
+        margin: auto 1rem;
+        color: white;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+    .navbtm {
+      font-family: inherit;
+      font-size: inherit;
+      height: 3rem;
+      color: white;
+      background-color: rgba(244, 244, 244, 0.25);
+      padding: 0.8rem 2.5rem;
+      margin: auto 0.5rem;
+      border: 1px solid white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+  .slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    height: 60vh;
+    h1 {
+      font-size: 5rem;
+    }
+    h4 {
+      color: rgba(219, 219, 219, 0.8);
+      font-weight: 300;
+      font-size: 1.5rem;
+      padding-left: 12rem;
+    }
+  }
+}
+
+// includes search bar, testimonial, popular, subs
+section {
+  margin: 0 2rem;
+
+}

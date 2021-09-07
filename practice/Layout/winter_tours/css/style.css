@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap");
+.backimg {
+  position: absolute;
+  width: 100%;
+  z-index: -100;
+}
+
+.backimg .topback {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+}
+
+.backimg .backblur {
+  background-color: #66869b;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(80%, #66869b), to(rgba(2, 0, 36, 0.2)));
+  background: linear-gradient(0deg, #66869b 80%, rgba(2, 0, 36, 0.2) 100%);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  position: relative;
+  top: -5rem;
+  height: 120vh;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+header {
+  width: 100%;
+}
+
+header nav {
+  margin: 0 2rem;
+  width: calc(100% - 4.1rem);
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  margin: 1rem 0;
+}
+
+header nav ul li {
+  margin: auto 1rem;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+header nav .navbtm {
+  font-family: inherit;
+  font-size: inherit;
+  height: 3rem;
+  color: white;
+  background-color: rgba(244, 244, 244, 0.25);
+  padding: 0.8rem 2.5rem;
+  margin: auto 0.5rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header .slogan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: white;
+  height: 60vh;
+}
+
+header .slogan h1 {
+  font-size: 5rem;
+}
+
+header .slogan h4 {
+  color: rgba(219, 219, 219, 0.8);
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding-left: 12rem;
+}
+
+section {
+  margin: 0 2rem;
+}
+/*# sourceMappingURL=style.css.map */
