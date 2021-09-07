@@ -1,3 +1,6 @@
+body {
+  background-color: #66869b;
+}
 .backimg {
   position: absolute;
   
@@ -18,6 +21,6 @@
     backdrop-filter: blur(20px);
     position: relative;
     top: -5rem;
-    height: 120vh;
+    height: 100vh;
   }
 }

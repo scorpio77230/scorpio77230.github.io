@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap");
+body {
+  background-color: #66869b;
+}
+
 .backimg {
   position: absolute;
   width: 100%;
@@ -23,7 +27,7 @@
           backdrop-filter: blur(20px);
   position: relative;
   top: -5rem;
-  height: 120vh;
+  height: 100vh;
 }
 
 * {
@@ -93,7 +97,7 @@ header .slogan {
           justify-content: center;
   text-align: center;
   color: white;
-  height: 60vh;
+  height: 50vh;
 }
 
 header .slogan h1 {
@@ -109,5 +113,304 @@ header .slogan h4 {
 
 section {
   margin: 0 2rem;
+}
+
+section .searchBar {
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  border-radius: 5px;
+  background-color: rgba(212, 212, 212, 0.25);
+  padding: 0 1rem;
+  color: rgba(219, 219, 219, 0.8);
+}
+
+section .searchBar input[type="text"] {
+  margin-left: 0.5rem;
+  background: transparent;
+  border: none;
+  width: 80%;
+  height: 2.5rem;
+}
+
+section .searchBar input[type="text"]::-webkit-input-placeholder {
+  font-size: 18px;
+  color: rgba(219, 219, 219, 0.5);
+}
+
+section .searchBar input[type="text"]:-ms-input-placeholder {
+  font-size: 18px;
+  color: rgba(219, 219, 219, 0.5);
+}
+
+section .searchBar input[type="text"]::-ms-input-placeholder {
+  font-size: 18px;
+  color: rgba(219, 219, 219, 0.5);
+}
+
+section .searchBar input[type="text"]::placeholder {
+  font-size: 18px;
+  color: rgba(219, 219, 219, 0.5);
+}
+
+section h3 {
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+section .testimonial {
+  margin-top: 3rem;
+}
+
+section .testimonial .carouselContainer {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .testimonial .carouselContainer i {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  margin: 0 1rem;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+section .testimonial .carouselContainer .carousel-box {
+  position: relative;
+  margin: 0 0.5rem;
+  background-color: white;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .testimonial .carouselContainer .carousel-box .carousel-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  width: 220px;
+  height: 250px;
+  -webkit-box-shadow: 10px 8px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 10px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+section .testimonial .carouselContainer .carousel-box .carousel-text {
+  margin-top: 2rem;
+  margin-left: 32%;
+}
+
+section .testimonial .carouselContainer .carousel-box .carousel-text .carousel-title h4 {
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+section .testimonial .carouselContainer .carousel-box .carousel-text .carousel-title p {
+  margin: 0.5rem 0;
+  font-size: 16px;
+  font-style: italic;
+  color: gray;
+}
+
+section .testimonial .carouselContainer .carousel-box .carousel-text .carousel-paragraph {
+  margin: 0 2rem 2rem 2rem;
+}
+
+section .testimonial .carouselContainer .carousel-box .carousel-text .carousel-paragraph p {
+  font-size: 16px;
+}
+
+section .popularCountries h3 {
+  margin-top: 3rem;
+}
+
+main {
+  margin: 1rem 2rem;
+}
+
+main .cardsContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+main .cardsContainer .grid-item {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+main .cardsContainer .card {
+  width: 100%;
+  background: white;
+}
+
+main .cardsContainer .card .card-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  max-height: 33vh;
+}
+
+main .cardsContainer .card .card-info {
+  margin: 0.8rem 0.8rem;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .cardsContainer .card .card-info .card-tag {
+  font-style: italic;
+}
+
+main .cardsContainer .card .card-title {
+  margin: 0.8rem;
+}
+
+main .cardsContainer .card .card-describe p {
+  margin: 0.8rem;
+  font-size: 12px;
+}
+
+main .cardsContainer .card .card-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.8rem 0.8rem;
+}
+
+main .cardsContainer .card .card-bottom p {
+  font-size: 16px;
+  font-style: italic;
+}
+
+main .cardsContainer .card .card-circle {
+  width: 2rem;
+  height: 2rem;
+  color: white;
+  font-size: 12px;
+  background-color: #242458;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2rem;
+  cursor: pointer;
+}
+
+main .cardsContainer .card .text-center {
+  margin: auto;
+  text-align: center;
+}
+
+main .cardsContainer .card-fullback {
+  color: ivory;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .cardsContainer .card-fullback::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(219, 219, 219, 0.2);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+main .cardsContainer .card-fullback .card-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  z-index: -2;
+}
+
+main .cardsContainer .card-fullback .card-message {
+  display: inline-block;
+  text-align: center;
+}
+
+main .cardsContainer .card-fullback .card-message .card-info {
+  margin: 1.2rem 2rem;
+  font-size: 16px;
+}
+
+main .cardsContainer .card-fullback .card-message .card-info .card-tag {
+  font-style: italic;
+}
+
+main .cardsContainer .card-fullback .card-message .card-title {
+  margin: 1.2rem 2rem;
+}
+
+main .cardsContainer .card-fullback .card-message .card-describe p {
+  margin: 1.2rem 2rem;
+  font-size: 12px;
+}
+
+main .cardsContainer .card-fullback .card-message .card-buttom {
+  margin: auto;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  font-size: 16px;
+  width: 35%;
+  border: 1px solid white;
+  border-radius: 2rem;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
