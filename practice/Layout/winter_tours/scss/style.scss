@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap");
 @import "./background";
+$darkblue: rgb(36, 36, 88);
 * {
   box-sizing: border-box;
   margin: 0;
@@ -122,12 +123,12 @@ section {
           left: 2rem;
           width: 220px;
           height: 250px;
-          box-shadow: 10px 8px 15px rgba(0,0,0,0.2);
+          box-shadow: 10px 8px 15px rgba(0, 0, 0, 0.2);
         }
         .carousel-text {
           margin-top: 2rem;
           margin-left: 32%;
-          .carousel-title{
+          .carousel-title {
             h4 {
               font-weight: 500;
               font-size: 1.7rem;
@@ -149,12 +150,37 @@ section {
       }
     }
   }
-.popularCountries{
-  h3 {
+  .popularCountries {
     margin-top: 3rem;
-
+    .boxContainer {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 1rem;
+      .box {
+        height: auto;
+        background-color: #fff;
+        text-align: center;
+        p {
+          margin: 1.5rem auto;
+          font-style: italic;
+          font-size: 16px;
+          color: gray;
+        }
+        .country-name {
+          width: 100%;
+          font-size: 1.5rem;
+          padding: 1rem 1.5rem;
+          margin: 1.5rem 0;
+          transition: all 0.3s ease-out;
+        }
+        &:hover .country-name {
+          background-color: $darkblue;
+          color: white;
+        }
+      }
+    }
   }
-}
 }
 
 main {
@@ -207,7 +233,7 @@ main {
         height: 2rem;
         color: white;
         font-size: 12px;
-        background-color: rgb(36, 36, 88);
+        background-color: $darkblue;
         border-radius: 50%;
         text-align: center;
         line-height: 2rem;
@@ -271,5 +297,84 @@ main {
         }
       }
     }
+  }
+}
+#sub {
+  margin-top: 2rem;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  dl {
+    color: white;
+    dt {
+      margin: 0.5rem;
+      font-weight: 500;
+      font-size: 2.3rem;
+    }
+    dd {
+      font-weight: 300;
+      margin-left: 4rem;
+      font-size: 1.5rem;
+    }
+  }
+  button {
+    font-family: inherit;
+    cursor: pointer;
+    color: $darkblue;
+    font-weight: 500;
+    padding: 0.7rem;
+    background-color: white;
+    border: none;
+    border-radius: 10rem;
+    width: 12rem;
+    transition: all 0.3s ease-out;
+    &:hover {
+      color: white;
+      background-color: $darkblue;
+    }
+  }
+}
+
+footer {
+  background-color: $darkblue;
+  height: 5.5rem;
+  .contectContainer {
+    margin: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    .socialIcons {
+      width: 20vw;
+      display: flex;
+      justify-content: space-between;
+      i {
+        width: 1rem;
+        color: white;
+        cursor: pointer;
+      }
+    }
+    .links {
+      width: 50vw;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      a,span {
+        text-decoration: none;
+        color: white;
+        font-weight: 300;
+        font-size: 12px;
+      }
+    }
+  }
+  .copyrights {
+    color: white;
+    font-size: 12px;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+
   }
 }

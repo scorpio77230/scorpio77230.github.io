@@ -3,7 +3,7 @@ body {
 }
 .backimg {
   position: absolute;
-  
+
   width: 100%;
   // height: 100vh;
   z-index: -100;
@@ -16,11 +16,30 @@ body {
     filter: brightness(70%);
   }
   .backblur {
-    background-color: #66869b;
-    background: linear-gradient(0deg, rgba(102,134,155,1) 80%, rgba(2,0,36,0.2) 100%);
+    background-color: rgb(102, 134, 155);
+    background: linear-gradient(0deg, rgba(102, 134, 155, 1) 80%, rgba(2, 0, 36, 0.2) 100%);
     backdrop-filter: blur(20px);
     position: relative;
     top: -5rem;
     height: 100vh;
+  }
+  .bottom {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/footer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(70%);
+    .bottomblur {
+      position: absolute;
+      top: -5%;
+      left: 0%;
+      width: 100%;
+      height: 10%;
+      background: linear-gradient(180deg, rgba(102, 134, 155, 1) 50%, rgb(160, 170, 172) 100%);
+      filter: brightness(140%) blur(3px);
+    }
   }
 }
